@@ -22,6 +22,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { i18n } from "../../translate/i18n";
 
 import { AuthContext } from "../../context/Auth/AuthContext";
+import logo from '../../assets/logo.png';
 
 // const Copyright = () => {
 // 	return (
@@ -77,9 +78,8 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlined />
-        </Avatar>
+        <img alt="logo" src={logo}></img>
+    
         <Typography component="h1" variant="h5">
           {i18n.t("login.title")}
         </Typography>
